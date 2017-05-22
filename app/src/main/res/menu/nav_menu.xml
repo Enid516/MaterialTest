@@ -4,7 +4,7 @@
         <item
             android:id="@+id/nav_item_1"
             android:icon="@mipmap/ic_launcher"
-            android:title="Item1" />
+            android:title="SearchView" />
         <item
             android:id="@+id/nav_item_2"
             android:icon="@mipmap/ic_launcher"

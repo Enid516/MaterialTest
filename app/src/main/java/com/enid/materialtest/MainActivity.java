@@ -1,5 +1,6 @@
 package com.enid.materialtest;
 
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -74,8 +75,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 drawerLayout.closeDrawers();
+                Intent intent = null;
                 switch (item.getItemId()) {
                     case R.id.nav_item_1:
+                        intent = new Intent(MainActivity.this,SearchActivity.class);
                         toastMsg("click nav item 1");
                         break;
                     case R.id.nav_item_2:
@@ -90,6 +93,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_sub_2:
                         toastMsg("click nav sub item 2");
                         break;
+                }
+                if (null != intent) {
+                    startActivity(intent);
                 }
                 return true;
             }

@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".FruitDetailActivity" android:theme="@style/AppTheme.StatusBarTransparentTheme"/>
+        <activity android:name=".SearchActivity"/>
     </application>
 
 </manifest>
